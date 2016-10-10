@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><p>Welcome to <%= title %> Page!</p></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+ 
+   
+    <p>Contact us form.</p>
+  
+	<form action="/contactus" method="post">
+	  Full name:  <input type="text" name="fullname" value="">
+	  </br>
+	  Type: </br>
+	       <textarea rows="2" cols="50" name ="type"> </textarea>
+	  <br><br> 
+	  Message: </br>
+	       <textarea rows="4" cols="50" name ="message"> </textarea>
+	  <br><br>
+	  
+	  <input type="submit" value="Submit">
+	</form>
+
+<p>If you click the "Submit" button, the form-data will be saved in to a 'message.txt' file and a 'Thank you!' page will be displayed."</p>
+
+ <h1><%= title %></h1>
+  </body>
+</html>
